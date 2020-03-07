@@ -1,0 +1,14 @@
+
+# First, Denylist ignore everything
+*
+*/**
+
+# Allowlist the file or folder
+# !NotIgnoredFile
+# !NotIgnoredFolder/
+
+# Recursively allowlist its contents
+# !NotIgnoredFolder/**
+
+!install.sh
+
