@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+
+  # docker-compose run ansible /ansible/install.sh 
+  ansible:
+    # image: ansible/ansible-runner
+    build: .
+    volumes:
+      - ".:/ansible"
+      - "~/.ansible:/root/.ansible"
+    working_dir: /ansible
