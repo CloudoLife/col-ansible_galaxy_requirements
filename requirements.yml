@@ -1,0 +1,148 @@
+# https://galaxy.ansible.com/docs/using/installing.html
+
+# ansible-galaxy install -r requirements.yml && ansible-galaxy collection install -r requirements.yml
+
+---
+roles:
+
+  # https://galaxy.ansible.com/andrewrothstein/anaconda
+  # installs Anaconda
+  - src: andrewrothstein.anaconda
+
+  - src: andrewrothstein.virtualbox
+
+  # https://galaxy.ansible.com/bjoernalbers/macos_pf
+  # Manage Packet Filter (pf) Firewall on macOS
+  - src: bjoernalbers.macos_pf
+
+  # https://galaxy.ansible.com/chmduquesne/wireguard
+  # Wireguard for Debian/Raspbian
+  - src: chmduquesne.wireguard
+
+  # https://github.com/davidfischer-ch/ansible-role-veracrypt
+  # GitHub - davidfischer-ch/ansible-role-veracrypt: Ansible role for veracrypt
+  - src: https://github.com/davidfischer-ch/ansible-role-veracrypt
+
+  # https://galaxy.ansible.com/dev-sec/os-hardening
+  # This role provides numerous security-related configurations, providing all-round base protection.
+  - src: dev-sec.os-hardening  
+
+  # https://galaxy.ansible.com/drew-kun/pf
+  # This role configures pf firewall creating custom anchors including ssh bruteforce protection anchor and ETOpen ruleset anchor for blocking the known attackers IPs
+  - src: drew-kun.pf
+  
+  # Role for installing the Antigen plugin manger for Zsh and using it to configure Zsh.
+  # https://galaxy.ansible.com/gantsign/antigen
+  - src: gantsign.antigen
+
+  # https://galaxy.ansible.com/gantsign/helm
+  # Ansible role for downloading and installing Helm the package manager for Kubernetes.
+  - src: gantsign.helm
+
+  # https://galaxy.ansible.com/gantsign/minikube
+  # Ansible role for downloading and installing Minikube.
+  - src: gantsign.minikube
+
+  # https://galaxy.ansible.com/gantsign/visual-studio-code
+  # Role for installing the Visual Studio Code IDE.
+  - src: gantsign.visual-studio-code
+
+  # Role for installing Visual Studio Code extensions.
+  # https://galaxy.ansible.com/gantsign/visual-studio-code-extensions
+  - src: gantsign.visual-studio-code-extensions
+
+  # # https://galaxy.ansible.com/gantsign/oh-my-zsh
+  # # Role for installing and configuring oh-my-zsh.
+  # - src: gantsign.oh-my-zsh
+
+  # https://galaxy.ansible.com/geerlingguy/docker
+  # Docker for Linux.
+  - src: geerlingguy.docker
+
+  # Helm for Kubernetes
+  # https://galaxy.ansible.com/geerlingguy/helm
+  # geerlingguy/ansible-role-helm: Ansible role - Helm
+  # https://github.com/geerlingguy/ansible-role-helm
+  - src: geerlingguy.helm
+
+  # https://galaxy.ansible.com/geerlingguy/homebrew
+  # Homebrew for macOS
+  - src: geerlingguy.homebrew
+
+  # https://galaxy.ansible.com/geerlingguy/kubernetes
+  # Kubernetes for Linux.
+  - src: geerlingguy.kubernetes
+
+  # https://galaxy.ansible.com/geerlingguy/k8s_manifests
+  # Kubernetes manifest management role.
+  - src: geerlingguy.k8s_manifests
+
+  # https://galaxy.ansible.com/geerlingguy/pip
+  # Pip (Python package manager) for Linux.
+  - src: geerlingguy.pip
+
+  - src: geerlingguy.repo-epel
+
+  # https://galaxy.ansible.com/geerlingguy/mas
+  # Mac App Store CLI installation for macOS
+  - src: geerlingguy.mas
+
+  # https://galaxy.ansible.com/githubixx/ansible_role_wireguard
+  # Installs Wireguard incl. systemd integration
+  - src: githubixx.ansible_role_wireguard
+
+  # https://galaxy.ansible.com/grog/package
+  # A role for installing packages on different operating systems.
+  - src: grog.package
+
+  # https://galaxy.ansible.com/jamesla/ansible_role_snap
+  # Install snapd and packages
+  - src: jamesla.ansible_role_snap
+
+  # # https://galaxy.ansible.com/manala/ohmyzsh
+  # # Handle oh-my-zsh
+  # - src: manala.ohmyzsh
+
+  # https://galaxy.ansible.com/markosamuli/asdf
+  # Installs asdf version manager
+  - src: markosamuli.asdf
+
+  # https://galaxy.ansible.com/mawalu/wireguard_private_networking
+  # Build your own multi server private network using wireguard and ansible
+  - src: mawalu.wireguard_private_networking
+
+  # https://galaxy.ansible.com/nginxinc/nginx
+  # Official Ansible role for NGINX
+  - src: nginxinc.nginx
+
+  # https://galaxy.ansible.com/nickjj/acme_sh
+  # Install and auto-renew SSL certificates with Let's Encrypt using acme.sh.
+  - src: nickjj.acme_sh
+
+  # https://galaxy.ansible.com/nvidia/nvidia_docker
+  # Install nvidia-docker
+  - src: nvidia.nvidia_docker
+
+  # https://galaxy.ansible.com/rvm/ruby
+  # The official RVM role to install and manage your ruby versions
+  - src: rvm.ruby
+
+  # https://galaxy.ansible.com/weareinteractive/apt
+  # Configures apt and installs/updates packages 
+  - src: weareinteractive.apt
+
+  # https://galaxy.ansible.com/viasite-ansible/zsh
+  # oh-my-zsh with powerlevel9k theme, fzf and other plugins
+  - src: viasite-ansible.zsh
+
+# ansible-galaxy collection install -r requirements.yml
+collections:
+  # Install a collection from Ansible Galaxy.
+
+  # https://galaxy.ansible.com/geerlingguy/k8s
+  # An elegant collection of Kuberenetes automation tools.
+  - name: geerlingguy.k8s
+    # version: 0.9.3
+    # source: https://galaxy.ansible.com
+
+  # - include: <path_to_requirements>/webserver.yml
