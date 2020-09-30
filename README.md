@@ -1,21 +1,50 @@
 # Ansible Galaxy Requiremenets
 
-Ansible install galaxy and collection by [requirements.yml](./requirements.yml) file. 
+Ansible install galaxy and collection by [requirements.yml](./requirements.yml) file. It can run with docker-compose or docker.
 
 ## How to run
 
-First, git clone [ansible-galaxy-requirements](.)
+First, git clone [col-ansible_galaxy_requirements](./)
 
 ```shell
-git clone git@github.com:CloudoLife/ansible-galaxy-requirements.git
+git clone https://github.com/CloudoLife/col-ansible_galaxy_requirements.git
 ```
 
-Then, run [install.sh](./install.sh).
+### Option 1 - (Recommendation)Docker Compose
+
+Then, run with docker-compose command.
+```shell
+# Run bash shell within container.
+$ docker-compose run ansible bash
+Creating col-ansible-galaxy-requirements_ansible_run ... done
+bash-5.0# 
+```
+
+```shell
+# Run bash shell immediately, such as ls /root/.ansible command.
+$ docker-compose run ansible ls /root/.ansible                    master ●  07:39:13
+Creating col-ansible-galaxy-requirements_ansible_run ... done
+collections   galaxy_token  roles
+cp            plugins       tmp
+```
+
+### Option 2 - Docker
+
+```shell
+# Run bash shell within container.
+$ docker run -it --rm --name cloudolife-ansible cloudlife/ansible bash            
+bash-5.0#
+```
+
+### Option 3 - Without Docker or Container
+It will download Ansible Galaxy collections and roles in ~/.ansible directory.
+
+Just run [install.sh](./install.sh).
 ```shell
 ./install.sh
 ```
 
-or 
+or run with ansible-galaxy.
 
 ```shell
 ansible-galaxy install -r requirements.yml && ansible-galaxy collection install -r requirements.yml

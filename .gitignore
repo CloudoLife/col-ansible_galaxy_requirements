@@ -16,6 +16,7 @@
 !.gitignore
 !docker-compose.yml
 !Dockerfile
+!entrypoint.sh
 !install.sh
 !LICENSE
 !README.md
