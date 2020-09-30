@@ -9,6 +9,10 @@ roles:
   # installs Anaconda
   - src: andrewrothstein.anaconda
 
+  # andrewrothstein.vagrant
+  # https://galaxy.ansible.com/andrewrothstein/vagrant
+  - src: andrewrothstein.vagrant
+
   - src: andrewrothstein.virtualbox
 
   # https://galaxy.ansible.com/bjoernalbers/macos_pf
