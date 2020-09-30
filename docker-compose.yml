@@ -4,9 +4,14 @@ services:
 
   # docker-compose run ansible /ansible/install.sh 
   ansible:
-    # image: ansible/ansible-runner
-    build: .
+    build:
+      args:
+        - IMAGE=${IMAGE}
+        - WORKDIR=${WORKDIR}
+      context: .
+      dockerfile: Dockerfile
+    image: cloudlife/ansible
     volumes:
-      - ".:/ansible"
+      - ".:${WORKDIR}"
       - "~/.ansible:/root/.ansible"
-    working_dir: /ansible
+    working_dir: ${WORKDIR}

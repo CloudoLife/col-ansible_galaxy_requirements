@@ -10,5 +10,7 @@
 # Recursively allowlist its contents
 # !NotIgnoredFolder/**
 
+!entrypoint.sh
 !install.sh
+!requirements.yml
 
