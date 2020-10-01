@@ -41,13 +41,13 @@ It will download Ansible Galaxy collections and roles in ~/.ansible directory.
 
 Just run [install.sh](./install.sh).
 ```shell
-./install.sh
+$ ./install.sh
 ```
 
 or run with ansible-galaxy.
 
 ```shell
-ansible-galaxy install -r requirements.yml && ansible-galaxy collection install -r requirements.yml
+$ ansible-galaxy install -r requirements.yml && ansible-galaxy collection install -r requirements.yml
 ```
 
 ## References
