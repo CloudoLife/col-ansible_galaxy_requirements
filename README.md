@@ -1,6 +1,6 @@
 # Ansible Galaxy Requiremenets
 
-Ansible install galaxy and collection by [requirements.yml](./requirements.yml) file. It can run with docker-compose or docker.
+Ansible install galaxy collection and roles by [requirements.yml](./requirements.yml) file. It can run with docker-compose or docker.
 
 ## How to run
 
