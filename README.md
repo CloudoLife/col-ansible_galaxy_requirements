@@ -22,7 +22,7 @@ bash-5.0#
 
 ```shell
 # Run bash shell immediately, such as ls /root/.ansible command.
-$ docker-compose run ansible ls /root/.ansible                    master ●  07:39:13
+$ docker-compose run ansible ls /root/.ansible
 Creating col-ansible-galaxy-requirements_ansible_run ... done
 collections   galaxy_token  roles
 cp            plugins       tmp
