@@ -34,6 +34,10 @@ roles:
   # https://galaxy.ansible.com/drew-kun/pf
   # This role configures pf firewall creating custom anchors including ssh bruteforce protection anchor and ETOpen ruleset anchor for blocking the known attackers IPs
   - src: drew-kun.pf
+
+  # juju4/ansible-falco: Ansible role to setup Falco, behavioral security with sysdig
+  # https://github.com/juju4/ansible-falco/
+  - src: https://github.com/juju4/ansible-falco
   
   # Role for installing the Antigen plugin manger for Zsh and using it to configure Zsh.
   # https://galaxy.ansible.com/gantsign/antigen
