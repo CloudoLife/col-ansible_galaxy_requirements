@@ -13,6 +13,8 @@ roles:
   # https://galaxy.ansible.com/andrewrothstein/vagrant
   - src: andrewrothstein.vagrant
 
+  # andrewrothstein.virtualbox
+  # https://galaxy.ansible.com/andrewrothstein/virtualbox
   - src: andrewrothstein.virtualbox
 
   # https://galaxy.ansible.com/bjoernalbers/macos_pf
@@ -146,6 +148,10 @@ roles:
 # ansible-galaxy collection install -r requirements.yml
 collections:
   # Install a collection from Ansible Galaxy.
+
+  # community.kubernetes.helm – Manages Kubernetes packages with the Helm package manager — Ansible Documentation
+  # https://docs.ansible.com/ansible/latest/collections/community/kubernetes/helm_module.html#ansible-collections-community-kubernetes-helm-module
+  - name: community.kubernetes
 
   # https://galaxy.ansible.com/geerlingguy/k8s
   # An elegant collection of Kuberenetes automation tools.
