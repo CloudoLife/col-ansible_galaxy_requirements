@@ -91,6 +91,8 @@ roles:
   # Pip (Python package manager) for Linux.
   - src: geerlingguy.pip
 
+  # https://galaxy.ansible.com/geerlingguy/repo-epel
+  # EPEL repository for RHEL/CentOS.
   - src: geerlingguy.repo-epel
 
   # https://galaxy.ansible.com/geerlingguy/mas
