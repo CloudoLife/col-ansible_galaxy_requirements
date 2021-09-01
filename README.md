@@ -7,7 +7,7 @@ Ansible install galaxy collection and roles by [requirements.yml](./requirements
 First, git clone [col-ansible_galaxy_requirements](./)
 
 ```shell
-git clone https://github.com/CloudoLife/col-ansible_galaxy_requirements.git
+$ git clone https://github.com/CloudoLife/col-ansible_galaxy_requirements.git
 ```
 
 ### Option 1 - (Recommendation)Docker Compose
