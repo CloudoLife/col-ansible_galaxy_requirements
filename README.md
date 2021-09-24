@@ -13,6 +13,7 @@ $ git clone https://github.com/CloudoLife/col-ansible_galaxy_requirements.git
 ### Option 1 - (Recommendation)Docker Compose
 
 Then, run with docker-compose command.
+
 ```shell
 # Run bash shell within container.
 $ docker-compose run ansible bash
@@ -37,6 +38,7 @@ bash-5.0#
 ```
 
 ### Option 3 - Without Docker or Container
+
 It will download Ansible Galaxy collections and roles in ~/.ansible directory.
 
 Just run [install.sh](./install.sh).
@@ -55,6 +57,7 @@ $ ansible-galaxy install -r requirements.yml && ansible-galaxy collection instal
 [1] [Galaxy User Guide — Ansible Documentation - https://docs.ansible.com/ansible/latest/galaxy/user_guide.html](https://docs.ansible.com/ansible/latest/galaxy/user_guide.html)
 
 ## License
+
 [MIT License](./License)
 
 Copyright (c) 2020 CloudoLife
