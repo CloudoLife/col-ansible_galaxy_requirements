@@ -26,6 +26,7 @@ RUN chmod +x ${WORKDIR}/install.sh && ${WORKDIR}/install.sh
 
 COPY entrypoint.sh /bin
 RUN chmod +x /bin/entrypoint.sh
+
 ENTRYPOINT ["entrypoint.sh"]
 
 
